@@ -1,0 +1,93 @@
+<!-- footer component - to be used on all pages -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="grid">
+      <div class="info">
+        <h4>&copy; 2025-2026 loners can make software</h4>
+        <p>Loners Can Make Software</p>
+        <p>The Hack Foundation, d.b.a</p>
+        <p>8605 Santa Monica Blvd #86294</p>
+        <p>West Hollywood, CA 90069</p>
+        <p>Reg. EIN 81-2908499</p>
+      </div>
+
+      <nav class="links">
+        <h4>donate</h4>
+        <a href="https://hcb.hackclub.com/donations/start/lonersoft">via HCB</a>
+        <a href="https://github.com/lonersoft">via GitHub sponsors</a>
+        <a href="https://hcb.gg/lonersoft">view our finance records</a>
+      </nav>
+
+      <nav class="links">
+        <h4>loners.software</h4>
+        <a href="/about">about us</a>
+        <a href="/projects">our projects</a>
+      </nav>
+    </div>
+
+    <div class="bottom">
+      <p>made w/ 💖 by lolodotzip and lumi</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+  *{
+    font-family: 'Gochi Hand', sans-serif;
+  }
+
+  .footer {
+    background-color: rgba(255,255,255,0.5);
+    backdrop-filter: blur(10px);
+    padding: 3rem 1.5rem;
+    width: 100%;
+    border-top: 2px solid darkslategray;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid darkslategray;
+  }
+
+  .info h4 {
+    color: darkslategray;
+    margin-bottom: 1rem;
+  }
+
+  .info p {
+    color: #adb5bd;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .links h4 {
+    color: darkslategray;
+    margin-bottom: 0.5rem;
+  }
+
+  .links a, .bottom a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .links a:hover, .bottom a:hover {
+    color: #adb5bd83;
+  }
+
+  .bottom {
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 0.875rem;
+  }
+</style>

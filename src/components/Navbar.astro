@@ -1,0 +1,66 @@
+<!-- navigation bar component - to be used on all pages -->
+
+<div id="navbar" class="navbar">
+    <section id="content">
+        <a href="/projects">projects</a>
+        <a href="/about">about us</a>
+        <a href="https://time.is/" id="sys-time">your local time</a>
+        <a href="mailto:team@loners.software">email us!</a>
+        <a href="https://hcb.gg/lonersoft">finances via HCB</a>
+    </section>
+</div>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+    #navbar {
+        width: 100%;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid white;
+    }
+
+    #content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #content a {
+        font-family: 'Gochi Hand', sans-serif;
+        text-decoration: none;
+        color: gray;
+        font-size: 1.2rem;
+        display: inline-block;
+        transition: transform 0.2s ease;
+    }
+
+    #content a:hover {
+        transform: scale(1.3);
+    }
+</style>
+
+<script>
+    function updTime(){
+        const timeEl = document.getElementById('sys-time')
+        if (!timeEl) return;
+
+        const now = new Date();
+        const time = now.toLocaleTimeString([], {
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: false
+        });
+
+        timeEl.textContent = time;
+    }
+    updTime();
+    setInterval(updTime, 1000);
+</script>

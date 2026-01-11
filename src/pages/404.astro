@@ -1,0 +1,72 @@
+---
+---
+
+  <div class="error-content">
+    
+    <a href="https://http.cat/404" title="http cat">
+      <img src="https://http.cat/404" alt="404 cat" />
+    </a>
+
+    <span id="txt1">page not found on the server</span>
+
+    <div id="route-map" title="route">
+      <svg width="750" height="150">
+        <rect x="25"  y="0"   fill="red" width="200" height="100"/>
+        <text x="125" y="50"  fill="white" text-anchor="middle" alignment-baseline="middle">cloudflare workers</text>
+        <text x="125" y="120" fill="black" text-anchor="middle" alignment-baseline="baseline">host</text>
+
+        <line x1="230" y1="50" x2="270" y2="50" stroke-width="2" stroke="black"/>
+        <line x1="270" y1="50" x2="260" y2="40" stroke-width="2" stroke="black"/>
+        <line x1="270" y1="50" x2="260" y2="60" stroke-width="2" stroke="black"/>
+
+        <rect x="275" y="0"   fill="green" width="200" height="100"/>
+        <text x="375" y="50"  fill="white" text-anchor="middle" alignment-baseline="middle">cloudflare in ur region</text>
+        <text x="375" y="120" fill="black" text-anchor="middle" alignment-baseline="baseline">network</text>
+
+        <line x1="480" y1="50" x2="520" y2="50" stroke-width="2" stroke="black"/>
+        <line x1="520" y1="50" x2="510" y2="40" stroke-width="2" stroke="black"/>
+        <line x1="520" y1="50" x2="510" y2="60" stroke-width="2" stroke="black"/>
+
+        <rect x="525" y="0"   fill="green" width="200" height="100"/>
+        <text x="625" y="50"  fill="white" text-anchor="middle" alignment-baseline="middle">your device</text>
+        <text x="625" y="120" fill="black" text-anchor="middle" alignment-baseline="baseline">client</text>
+      </svg>
+    </div>
+
+    <table width="750">
+      <tr>
+        <td>loners.software homepage</td>
+        <td><a href="https://loners.software/">click here</a></td>
+      </tr>
+      <tr>
+        <td>shoot us an email</td>
+        <td><a href="mailto:team@loners.software">click here too</a></td>
+      </tr>
+    </table>
+  </div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+  *{
+    font-family: 'Gochi Hand', sans-serif;
+  }
+  
+  .error-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+  }
+
+  span#txt1 {
+    margin: 10px;
+    font-size: 16pt;
+    display: block;
+  }
+
+  table, #route-map {
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
